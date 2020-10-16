@@ -1,5 +1,5 @@
 {
-  "name": "readmegenerator-",
+  "name": "readmegenerator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Myra-R/ReadMeGenerator-/issues"
   },
-  "homepage": "https://github.com/Myra-R/ReadMeGenerator-#readme"
+  "homepage": "https://github.com/Myra-R/ReadMeGenerator-#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
 }
