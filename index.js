@@ -10,11 +10,7 @@ function promptUser() {
             name: "Title",
             message: "Enter project title here:",
         },
-        {
-            type: "input",
-            name: "badge",
-            message: "Enter badge title here title here:",
-        },
+    
         {
             type: "input",
             name: "description",
@@ -63,24 +59,6 @@ function promptUser() {
             message: "Enter your email address"
         }
     ])
-    // function generateHTML(answers) {
-    //     return `
-    //   ## ${answers.location}
-
-
-    //   Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a to create headings. Multiple  in a row denote smaller heading sizes.
-
-    //   ### This is a third-tier heading
-
-    //   You can use one # all the way up to ###### six for different heading sizes.
-
-    //   If you'd like to quote someone, use the > character before the line:
-
-    //   > Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-    //   > - Captain Janeway
-    // `
-    // }
-    // 1. prompt questions
 }
 promptUser()
     //2. get data from questions (answers obj)
@@ -97,29 +75,48 @@ promptUser()
         console.log(err);
     })
 function generateHTML(answers) {
-    return `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-      <title>Document</title>
-    </head>
-    <body>
-      <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-        <p class="lead">I am from ${answers.location}.</p>
-        <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-        <ul class="list-group">
-          <li class="list-group-item">My GitHub username is ${answers.github}</li>
-          <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-        </ul>
-      </div>
-    </div>
-    </body>
-    </html>`;
+    return `# ${answers.title}
+    ${answers.license}
+    ${answers.description}
+    # Table of contents: 
+    <a href="#install">Installation</a><br>
+    <a href="#usage">Usage</a><br>
+    <a href="#contributing">Contributing</a><br>
+    <a href="#tests">Tests</a><br>
+    <a href="#questions">Questions</a><br>
+    # Installation 
+    <a id="install">${answers.install}</a>
+    # Usage
+    <a id="#usage">${answers.usage}</a>
+    # Contributing
+    <a id="#contributing">${answers.contributing}</a>
+    # Tests
+    <a id="#tests">${answers.tests}</a>
+    # Questions
+    <a id="#questions">${answers.questions}</a>
+    `
+    // <!DOCTYPE html>
+    // <html lang="en">
+    // <head>
+    //   <meta charset="UTF-8">
+    //   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    //   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    //   <title>Document</title>
+    // </head>
+    // <body>
+    //   <div class="jumbotron jumbotron-fluid">
+    //   <div class="container">
+    //     <h1 class="display-4">Hi! My name is ${answers.name}</h1>
+    //     <p class="lead">I am from ${answers.location}.</p>
+    //     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
+    //     <ul class="list-group">
+    //       <li class="list-group-item">My GitHub username is ${answers.github}</li>
+    //       <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
+    //     </ul>
+    //   </div>
+    // </div>
+    // </body>
+    // </html>`;
 }
 
 
