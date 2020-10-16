@@ -84,6 +84,7 @@ ${answers.installation}
 ## Usage:
 ${answers.usage}
 ## License:
+![license](https://img.shields.io/badge/${answers.license}-v1.0-green})
 ${answers.license}
 ## Contributing:
 ${answers.contributing}

@@ -1,23 +1,24 @@
 
-# ReadME Gen
+# has
 ## Description:
-A readMe generator to create profiles
+fdsa
 ## Installation:
-Node and inquirier
+werj
 ## Usage:
-This is to help users create profile fast and efficently 
+nasdf
 ## License:
+![license](https://img.shields.io/badge/MIT-v1.0-green})
 MIT
 ## Contributing:
-Classmates
+laskdf
 ## Test:
-there is no test at this time
+asd
 ## Username:
-Myra-R
+asdfe
 ## Github:
-https://github.com/Myra-R
+sdfj
 ## Email:
-11marozmi@gmail.com
+na
 # Table of contents: 
 * [installation](#installation)
 * [usage](#usage)
@@ -27,9 +28,9 @@ https://github.com/Myra-R
 # Installation 
 undefined
 # Usage:
-This is to help users create profile fast and efficently 
+nasdf
 # Contributing:
-Classmates
+laskdf
 # Tests:
 undefined
 # Questions:
